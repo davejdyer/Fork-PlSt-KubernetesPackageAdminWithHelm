@@ -27,7 +27,8 @@ kubectl get nodes
 # list helm repositories
 helm repo list
 
-
+# add Stable repo
+helm repo add stable https://charts.helm.sh/stable
 
 # search repository for a mysql chart
 helm search repo andrewpruski/mysql
