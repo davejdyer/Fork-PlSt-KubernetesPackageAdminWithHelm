@@ -27,41 +27,41 @@ kubectl get nodes
 # list helm repositories
 helm repo list
 
-# add Stable repo
-helm repo add stable https://charts.helm.sh/stable
+# add MySQL repo
+helm repo add bitnami https://charts.bitnami.com/bitnami
 
 # search repository for a mysql chart
-helm search repo andrewpruski/mysql
+helm search repo bitnami/mysql
 
 
 
 # show chart definition
-helm show chart andrewpruski/mysql
+helm show chart bitnami/mysql
 
 
 
 # show chart README
-helm show readme andrewpruski/mysql
+helm show readme bitnami/mysql
 
 
 
 # pipe README to file
-helm show readme andrewpruski/mysql > C:\Temp\README.txt
+helm show readme bitnami/mysql > "C:\_Code\Learning Modules\Pluralsight\KubePackageAdminWithHelm\Fork-PlSt-KubernetesPackageAdminWithHelm\Module 3\MySqlChart\README.md"
 
 
 
 # show chart values
-helm show values andrewpruski/mysql > C:\Temp\values.txt
+helm show values bitnami/mysql > "C:\_Code\Learning Modules\Pluralsight\KubePackageAdminWithHelm\Fork-PlSt-KubernetesPackageAdminWithHelm\Module 3\MySqlChart\values.yaml"
 
 
 
 # test deployment of chart
-helm install mysql andrewpruski/mysql --dry-run --debug
+helm install mysql bitnami/mysql --dry-run --debug
 
 
 
 # deploy chart
-helm install mysql andrewpruski/mysql
+helm install mysql bitnami/mysql
 
 
 

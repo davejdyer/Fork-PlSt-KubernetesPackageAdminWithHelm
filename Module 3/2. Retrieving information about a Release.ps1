@@ -25,22 +25,22 @@ helm status mysql
 
 
 # get release manifests
-helm get manifest mysql > C:\Temp\manifests.txt
+helm get manifest mysql > "C:\_Code\Learning Modules\Pluralsight\KubePackageAdminWithHelm\Fork-PlSt-KubernetesPackageAdminWithHelm\Module 3\MySqlChart\manifests.yaml"
 
 
 
 # get release values - no user values were supplied so file will be blank
-helm get values mysql > C:\Temp\values.txt
+helm get values mysql > "C:\_Code\Learning Modules\Pluralsight\KubePackageAdminWithHelm\Fork-PlSt-KubernetesPackageAdminWithHelm\Module 3\MySqlChart\values.yaml"
 
 
 
 # get release notes
-helm get notes mysql > C:\Temp\notes.txt
+helm get notes mysql > "C:\_Code\Learning Modules\Pluralsight\KubePackageAdminWithHelm\Fork-PlSt-KubernetesPackageAdminWithHelm\Module 3\MySqlChart\notes.txt"
 
 
 
 # get all from release
-helm get all mysql  > C:\Temp\all.txt
+helm get all mysql  > "C:\_Code\Learning Modules\Pluralsight\KubePackageAdminWithHelm\Fork-PlSt-KubernetesPackageAdminWithHelm\Module 3\MySqlChart\all.txt"
 
 
 

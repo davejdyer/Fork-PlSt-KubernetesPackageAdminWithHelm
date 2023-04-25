@@ -112,6 +112,11 @@ choco install kubernetes-helm
 # Confirm Helm version
 helm version
 
+# list helm repositories
+helm repo list
+
+# add Stable repo
+helm repo add stable https://charts.helm.sh/stable
 
 
 # Add a helm repository to use the charts in the following demos
@@ -119,6 +124,8 @@ helm version
 # We'll be creating a custom Helm repository using Github in Module 4
 helm repo add andrewpruski https://raw.githubusercontent.com/dbafromthecold/KubernetesPackageAdminWithHelm/master/
 
+# list helm repositories
+helm repo list
 
 
 # Search for a chart
